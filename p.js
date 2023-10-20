@@ -28,19 +28,27 @@ async function logJSONData() {
     tempHtml = ` 
       <div class="movie-card" id="${results[a]["id"]}">
       <img src="https://image.tmdb.org/t/p/w500/${results[a]["poster_path"]}">
+      <h3 class="movie-title">${results[a]["title"]}</h3>
       <p>${results[a]["overview"]}</p>
-      <p>${results[a]["vote_average"]}</p>   
+      <br/>
+      <p>Rationg: ${results[a]["vote_average"]}</p>   
       </div>
       `
 
     movies.innerHTML += tempHtml;
-
   }
 
 };
 
 
-
 logJSONData();
+
+
+function movieStyle(){
+  const movieCard = document.querySelector(".movie-card");
+  movieCard.setAttribute("style", )
+
+
+}
 
 
