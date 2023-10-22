@@ -5,111 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-
     <script src="p.js"></script>
-    <style>
-        h1 {
-            display: block;
-            font-size: 2em;
-            margin-block-start: 0.67em;
-            margin-block-end: 0.67em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            font-weight: bold;
-        }
-
-        header {
-            background-color: #ffe194;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 30px 0;
-        }
-
-        .search {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            padding: 20px 0;
-            border-bottom: 1px solid black;
-        }
-
-        .search label {
-            font-size: 25px;
-        }
-
-        .search input {
-            margin-left: 20px;
-            min-width: 200px;
-            padding: 5px 10px;
-        }
-
-        .search button {
-            margin-left: 10px;
-            padding: 5px;
-        }
-
-
-
-
-        .card-list {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            justify-content: center;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        h3 {
-            display: block;
-            font-size: 1.17em;
-            margin-block-start: 1em;
-            margin-block-end: 1em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            font-weight: bold;
-
-        }
-
-        .movie-card {
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
-            margin: 20px;
-            padding: 20px;
-            width: 300px;
-            justify-self: center;
-            background-color: bisque;
-            border-radius: 10px;
-            cursor: pointer;
-            user-select: none;
-        }
-
-        .movie-card img {
-            width: 100%;
-            border-radius: 10px;
-
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h1 class="sign">내배캠 최고 영화 컬렉션</h1>
+        <h1 class="sign">내배캠 최고 평점 영화 컬렉션</h1>
     </header>
-    <div>
-        <form class="search" onsubmit="handleSearch(event)">
-            <label> 영화검색 : </label>
-            <input type="text" placeholder="영화 제목을 검색해 보세요">
-            <button type="submit"> 검색 </button>
-        </form>
+    <div class="search">
+            <label> 영화 검색 : </label>
+            <input type="text" id="searchInput" placeholder="영화 제목을 검색해 보세요">
+            <button type="button" id="submit"> 검색 </button>
     </div>
-    <section class="card-list" id="">
+    <section class="card-list" >
+
 
     </section>
 </body>
+
 
 </html>
